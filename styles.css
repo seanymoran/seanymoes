@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: block;
+    margin: 0;
+} 
+
+#titleSection {
+    background-image: url(oranges.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.402);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#titleSpan {
+    background-color: #6160606f;
+    height: 100vh;
+    width: 50%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#h1Span {
+    background: linear-gradient(to right, transparent 50%, wheat 50%), url(oranges.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: absolute;
+    z-index: 1;
+}
+
+#titleSubTitle {
+    position: absolute;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    width: 30%;
+}
+
+#test {
+    height: 1000px;
+    width: 100%;
+}
+
+h1 {
+    font-size: clamp(6rem, 10vw, 20rem);
+    line-height: clamp(6rem, 10vw, 20rem);
+}
+
+h2 {
+    color: wheat;
+    margin-bottom: 10px;
+}
+
+p {
+    color: wheat;
+}
+
+@media (max-width: 600px) {
+    #h1Span {
+        align-items: normal;
+        text-align: right;
+    }
+    #titleSubTitle {
+        width: 40%;
+        margin-left: 5%;
+    }
+}
